@@ -1,0 +1,226 @@
+/* ================= GLOBAL STYLES ================= */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f8f9fc;
+  color: #333;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #00bcd4 !important;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.hero .btn {
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #00bcd4;
+  color: white;
+}
+
+/* ================= SECTION TITLES ================= */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #00bcd4;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+/* ================= ABOUT SECTION ================= */
+#about {
+  background-color: white;
+}
+
+#about ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about ul li {
+  background: #f1f1f1;
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+/* ================= PROJECTS ================= */
+#projects {
+  background-color: #f8f9fc;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ================= SKILLS ================= */
+#skills {
+  background-color: white;
+}
+
+.progress {
+  height: 20px;
+  border-radius: 10px;
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+  background-color: #00bcd4;
+  font-weight: bold;
+}
+
+/* ================= UI/UX & CONTENT ================= */
+#uiux,
+#content {
+  background-color: #f8f9fc;
+  padding: 60px 20px;
+}
+
+#uiux h2,
+#content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+#uiux ul,
+#content ul {
+  max-width: 700px;
+  margin: auto;
+  padding-left: 20px;
+}
+
+#uiux li,
+#content li {
+  margin-bottom: 8px;
+}
+
+/* ================= CONTACT ================= */
+#contact {
+  background-color: white;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: auto;
+  background: #f8f9fc;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#contact input,
+#contact textarea {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#contact button {
+  background-color: #00bcd4;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#contact button:hover {
+  background-color: #0097a7;
+}
+
+/* Contact text */
+#contact p {
+  text-align: center;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero {
+    padding: 80px 15px;
+  }
+}
